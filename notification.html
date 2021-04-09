@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./notification.css">
+    <link rel="stylesheet" href="./navbar.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="navbar-container">
+        <div class="logo-container">
+            <div class="logo">
+                <a href="./index.html" class="logo-img">
+                    <img src="./logo" alt="">
+                </a>
+            </div>
+            <form class="search-container">
+                <input type="search" placeholder="Tim kiem">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+        <ul class="navbar">
+            <li class="nav">
+                <a href="./index.html"><i class="fas fa-home"></i></a>
+            </li>
+            <li class="nav">
+                <a href="#"><i class="fas fa-play-circle"></i></i></a>
+            </li>
+            <li class="nav">
+                <a href="./chat.html"><i class="fab fa-facebook-messenger">
+                    <span class="notification-count">10</span>
+                </i></a>
+            </li>
+            <li class="nav">
+                <a href="#" class="active"><i class="fas fa-bell">
+                    <span class="notification-count">5</span>
+                </i></a>
+            </li>
+            <li class="nav">
+                <a href="#"><i class="fas fa-user"></i></a>
+            </li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="main">
+            <div class="header">
+                <h1>Thông báo của bạn</h1>
+                <p>Đánh dấu tất cả đã đọc</p>
+            </div>
+            <ul class="notification-list">
+                <li>
+                    <a href="#" class="notification unread">
+                        <i class="fas fa-bell"></i> Nguyen Hoang Anh da thich anh cua ban
+                        <span>20:08 - 20/9/2020</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="notification read">
+                        <i class="fas fa-bell"></i> Nguyen Hoang Anh da thich anh cua ban
+                        <span>20:08 - 20/9/2020</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="notification read">
+                        <i class="fas fa-bell"></i> Nguyen Hoang Anh da thich anh cua ban
+                        <span>20:08 - 20/9/2020</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="notification unread">
+                        <i class="fas fa-bell"></i> Nguyen Hoang Anh da thich anh cua ban
+                        <span>20:08 - 20/9/2020</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

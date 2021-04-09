@@ -109,11 +109,17 @@ a.post-time-link:hover {
     overflow: hidden;
     border: 1px solid black;
     padding: 6px;
+    text-align: center;
 }
 
 .post-image img {
     display: block;
     width: 100%;
+    height: auto;
+}
+
+.post-image video {
+    max-width: 100%;
     height: auto;
 }
 
