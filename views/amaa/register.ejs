@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="/css/amaa/login.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="header">Đăng ký</h1>
+        <form action="/amaa/register" method="POST">
+            <input type="email" placeholder="Email" class="input" name="email" required>
+            <input type="text" class="input" placeholder="Username" name="username" required>
+            <input type="password" class="input" placeholder="Password" name="password" required>
+            <input type="password" class="input" placeholder="Confirm password" name="cfpassword" required>
+            <div class="submit-container">
+                <button type="submit">Đăng ký</button>
+            </div>
+        </form>
+        <a href="/amaa/login" class="forget-password">Đăng nhập ở đây</a>
+    </div>
+</body>
+</html>

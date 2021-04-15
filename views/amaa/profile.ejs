@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="/css/amaa/style.css">
+    <link rel="stylesheet" href="/css/amaa/profile.css">
+    <link rel="stylesheet" href="/css/amaa/navbar.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="navbar-container">
+        <div class="logo-container">
+            <div class="logo">
+                <a href="/amaa/" class="logo-img">
+                    <img src="/assets/amaa/logo" alt="">
+                </a>
+            </div>
+            <form class="search-container">
+                <input type="search" placeholder="Tim kiem">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+        <ul class="navbar">
+            <li class="nav">
+                <a href="/amaa/"><i class="fas fa-home"></i></a>
+            </li>
+            <li class="nav">
+                <a href="#"><i class="fas fa-play-circle"></i></i></a>
+            </li>
+            <li class="nav">
+                <a href="/amaa/chat"><i class="fab fa-facebook-messenger">
+                    <span class="notification-count">10</span>
+                </i></a>
+            </li>
+            <li class="nav">
+                <a href="/amaa/notification"><i class="fas fa-bell">
+                    <span class="notification-count">5</span>
+                </i></a>
+            </li>
+            <li class="nav">
+                <a href="#" class="active"><i class="fas fa-user"></i></a>
+            </li>
+        </ul>
+    </div>
+    <div class="user-profile-image-container">
+        <div class="user-bgimage-container">
+            <div class="user-avaimage-container">
+                <img src="/assets/amaa/yenchi.jpg" alt="">
+            </div>  
+        </div>
+    </div>
+    <div class="container" uid="6072810238110f459906fe8f">
+        <div class="newfeed">
+            <div class="post-container">
+                <div class="fl-container">
+                    <button class="fl">Follow</button>
+                    <button class="ufl">Unfollow</button>
+                </div>
+            </div>
+            <div class="post-container">
+                <form action="/amaa/user/changeAvatar" enctype="multipart/form-data" method="POST">
+                    <label for="uploadAvaImage">Thay đổi ảnh đại diện</label>
+                    <input type="file" id="uploadAvaImage" name="newava">
+                    <button type="submit">Change avatar</button>
+                </form>
+                <br><br><br>
+                <form action="/amaa/user/changePassword" method="POST">
+                    <label for="changePassword">Thay đổi mật khẩu</label>
+                    <br>
+                    <input type="password" placeholder="Mật khẩu cũ" name="oldpassword">
+                    <br>
+                    <input type="password" placeholder="Mật khẩu mới" name="newpassword">
+                    <br>
+                    <input type="password" placeholder="Xác nhận mật khẩu mới" name="cfnewpassword">
+                    <button type="submit">Change password</button>
+                </form>
+            </div>
+            <div class="post-container">
+                <div class="a">
+                    <a href="#" class="ab">
+                        <div class="abc">
+                            <img class="profile-img" src="/assets/amaa/yenchi.jpg" alt="yenchi">
+                        </div>
+                    </a>
+                    <div class="a-ask">
+                        <p id="create-post-show">Ban dang nghi gi</p>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container" pid="6075a9106846e8aaee009106">
+                <div class="author-container">
+                    <a href="#" class="ab">
+                        <div class="abc">
+                            <img class="profile-img" src="/assets/amaa/yenchi.jpg" alt="yenchi">
+                        </div>
+                    </a>
+                    <div class="a-ask">
+                        <a href="#" class="user-link">Nguyen Hoang Anh</a>
+                        <a href="#" class="post-time-link">16 minutes</a>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post-content">
+                        <p>loribus facilis nihil, suscipit tempus dis quasi eros! Eum quaerat dolore cumque. Sollicitudin mus habitant cillum placerat arcu duis eros distinctio natus maecenas aliquip. Orci ornare nibh potenti iure optio accumsan convallis lacus illum illo. Sagittis dolore ac, modi nostrud fringilla incidunt natoque suspendisse leo aliquet maecenas dictumst, elit possimus illo! Diamlorem! Aute natus, aliquid tenetur, harum lacinia reprehenderit hendrerit deserunt, ratione elementum corrupti, iste incidunt pariatur platea ridiculus congue sociis elementum! Ut perferendis placeat inventore, architecto fugit. Hac quo debitis nisl? Sequi expedita! Iaculis magnam facilisi. Conubia, molestiae debitis accumsan platea est ea facilisi laoreet iure assumenda? Omnis </p>
+                    </div>
+                    <div class="post-image">
+                        <img src="/assets/amaa/yenchi.jpg" alt="mctominay">
+                    </div>
+                    <div class="post-reaction-count">
+                        <div class="prcc">
+                            <span class="love"><i class="fas fa-heart"></i></span>
+                            <span class="haha"><i class="fas fa-laugh-beam"></i></span>
+                            <span class="sad"><i class="fas fa-sad-tear"></i></span>
+                            <span class="prcn">20</span>
+                        </div>
+                    </div>
+                    <div class="post-reaction-container">
+                        <div class="cm-container">
+                            <button type="button" class="love active" ><i class="fas fa-heart"></i></button>
+                        </div>
+                        <div class="cm-container">
+                            <button type="button" class="haha"><i class="fas fa-laugh-beam"></i></button>
+                        </div>
+                        <div class="cm-container">
+                            <button type="button" class="sad"><i class="fas fa-sad-tear"></i></button>
+                        </div>
+                        <!-- <div class="cm-container">
+                            <button type="button" class="comment"><i class="fas fa-comment"></i></button>
+                        </div> -->
+                    </div>
+                    <div class="comment-container">
+                        <div class="own-comment-container">
+                            <a href="#" class="ab">
+                                <div class="abc">
+                                    <img src="/assets/amaa/yenchi.jpg" alt="" class="profile-img">
+                                </div>
+                            </a>
+                            <form class="ocinput">
+                                <input type="text" class="cmipct" placeholder="Hay viet binh luan vao day">
+                                <button type="submit" class="cmsm"><i class="fas fa-paper-plane"></i></button>
+                            </form>
+                        </div>
+                        <div class="comment-list-container">
+                            <div class="user-comment-container">
+                                <a href="#" class="ab">
+                                    <div class="abc">
+                                        <img src="/assets/amaa/post.jpg" alt="" class="profile-img">
+                                    </div>
+                                </a>
+                                <div class="user-comment-content">
+                                    <a href="#" class="user-comment-name">Nguyen Hoang Anh</a>
+                                    <p>Vkl Chuyen ha</p>
+                                    <div class="user-comment-reaction">
+                                        <span>Thich</span>
+                                        <span>Tra loi</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="user-comment-container">
+                                <a href="#" class="ab">
+                                    <div class="abc">
+                                        <img src="/assets/amaa/yenchi.jpg" alt="" class="profile-img">
+                                    </div>
+                                </a>
+                                <div class="user-comment-content">
+                                    <a href="#" class="user-comment-name">Nguyen Hoang Anh</a>
+                                    <p>Ahihi</p>
+                                    <div class="user-comment-reaction">
+                                        <span>Thich</span>
+                                        <span>Tra loi</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="user-comment-container">
+                                <a href="#" class="ab">
+                                    <div class="abc">
+                                        <img src="/assets/amaa/yenchi.jpg" alt="" class="profile-img">
+                                    </div>
+                                </a>
+                                <div class="user-comment-content">
+                                    <a href="#" class="user-comment-name">Nguyen Hoang Anh</a>
+                                    <p> neque, dis aut. Eum non varius neque blandit distinctio morbi tenetur, beatae nunc? Ea distinctio nostrud conubia, aliquet urna hac maiores error repellendus? Consequuntur occaecati scelerisque voluptates. Occaecat praesentium. Ullamcorper posuere condimentum auctor augue incidunt itaque tincidunt placerat curae, tristique excepteur, odit aenean voluptatem proin hac tristique praesentium dignissimos recusandae! Mi, repudiandae harum euismod eum necessitatibus lectus! Ac, delectus doloremque consectetuer blanditiis alias aliquam veritatis soluta! Nulla diamlorem hendrerit. Similique, tempus facilisis officiis, recusandae pro</p>
+                                    <div class="user-comment-reaction">
+                                        <span>Thich</span>
+                                        <span>Tra loi</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="clcxt">Xem them</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('.fl').click(function(e) {
+                e.preventDefault()
+                let followId = $('.container').attr('uid')
+                $.ajax({
+                    type: "POST",
+                    url: "/amaa/user/follow",
+                    data: {followId: followId},
+                    success: (res) => {
+                        console.log(res)
+                    }
+                });
+            })
+
+            $('.ufl').click(function(e) {
+                e.preventDefault()
+                let followId = $('.container').attr('uid')
+                $.ajax({
+                    type: "POST",
+                    url: "/amaa/user/unfollow",
+                    data: {followId: followId},
+                    success: (res) => {
+                        console.log(res)
+                    }
+                });
+            })
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.container {
+    padding-top: 120px;
+}
+
+.main {
+    margin-left: 25%;
+    width: 50%;
+}
+
+.header {
+    border-bottom: 1px solid rgb(223, 223, 223);
+    padding: 10px 0;
+    overflow: hidden;
+}
+
+.header h1 {
+    display: inline-block;
+    float: left;
+    font-size: 35px;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+.header p {
+    display: inline-block;
+    float: right;
+    font-size: 15px;
+    font-weight: bold;
+    color: green;
+    font-family: sans-serif;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+ul.notification-list {
+    list-style: none;
+}
+
+a.notification {
+    display: block;
+    padding: 20px 10px;
+    border-bottom: 1px solid rgb(223, 223, 223);
+    font-size: 18px;
+    font-family: sans-serif;
+    position: relative;
+}
+
+a.notification span {
+    position: absolute;
+    right: 10px;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+a.notification:hover {
+    background-color: rgb(223, 223, 223);
+}
+
+a.notification.read {
+    color: grey;
+}
+
+a.notification.read i {
+    color: grey;
+}
+
+a.notification.unread {
+    font-weight: bold;
+    color: black;
+}
+a.notification.unread i {
+    color: red;
+}

@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.container {
+    width: 500px;
+    border: 1px solid;
+    color: black;
+    border-radius: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+}
+
+h1.header {
+    font-family: sans-serif;
+    padding: 10px 0;
+    font-size: 40px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.input {
+    display: block;
+    width: calc(100% - 29px);
+    padding: 10px;
+    font-size: 15px;
+    margin-bottom: 15px;
+    /* border: coral; */
+    border-radius: 10px;
+    border: 1px solid grey;
+    outline: none;
+}
+
+.submit-container {
+    text-align: center;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 24px;
+    border: none;
+    background: rgb(96, 153, 85);
+    color: white;
+    font-family: sans-serif;
+    font-weight: 800;
+    border-radius: 20px;
+}
+
+button:hover {
+    background: green;
+}
+
+a.forget-password {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: underline;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.container {
+    width: 500px;
+    border: 1px solid;
+    color: black;
+    border-radius: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+}
+
+h1.header {
+    font-family: sans-serif;
+    padding: 10px 0;
+    font-size: 40px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.input {
+    display: block;
+    width: calc(100% - 29px);
+    padding: 10px;
+    font-size: 15px;
+    margin-bottom: 15px;
+    /* border: coral; */
+    border-radius: 10px;
+    border: 1px solid grey;
+    outline: none;
+}
+
+.submit-container {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 24px;
+    border: none;
+    background: rgb(96, 153, 85);
+    color: white;
+    font-family: sans-serif;
+    font-weight: 800;
+    border-radius: 20px;
+    outline: none;
+}
+
+button:hover {
+    background: green;
+}
+
+a.forget-password {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: underline;
+}
+
+a.register {
+    display: inline-block;
+    background-color: #00ff5a;
+    padding: 10px 100px;
+    color: white;
+    font-weight: 800;
+    font-size: 27px;
+    font-family: sans-serif;
+    border-radius: 20px;
+}
+
+.register:hover {
+    background-color: green;
+}
+
+.error-container {
+    text-align: center;
+}
+
+p.error {
+    color: red;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding: 10px 0;
+    font-style: italic;
+    margin-top: 20px;
+}
