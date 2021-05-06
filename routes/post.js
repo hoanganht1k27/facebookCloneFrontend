@@ -9,7 +9,7 @@ const commentModel = require('../models/amaa/comment')
 
 const {getUniqueId, getExtensionOfFile} = require('./util')
 
-const imageTypes = ["image/jpeg", "image/png", "image/gif"]
+const imageTypes = ["image/jpeg", "image/png", "image/gif", "video/mp4"]
 const storage = multer.diskStorage({
     destination: (req, file, callback) => {
         callback(null, path.join('public', 'assets', 'amaa'))
@@ -141,6 +141,14 @@ router.post('/comment', async (req, res) => {
             error: err
         })
     }
+})
+
+router.get('/testRef/:id', async (req, res) => {
+    let pid = req.params.id
+    let p = await postModel.findOne({_id: pid})
+                            .populate({path: 'likes', select: 'authorId reactorId'})
+                            .exec()
+    res.json(p)
 })
 
 

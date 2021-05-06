@@ -5,6 +5,7 @@ const userModel = require('../models/amaa/user')
 
 const postRouter = require('./post')
 const userRouter = require('./user')
+const watchRouter = require('./watch')
 
 const {checkNotNull, hashPassword, checkPassword} = require('./util.js') 
 
@@ -101,6 +102,7 @@ router.get('/notification', (req, res) => {
 })
 
 router.use('/post', checkLoggedIn, postRouter)
-router.use('/user', checkLoggedIn, userRouter);
+router.use('/user', checkLoggedIn, userRouter)
+router.use('/watch', checkLoggedIn, watchRouter)
 
 module.exports = router
